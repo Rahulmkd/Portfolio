@@ -117,7 +117,7 @@ header nav ul li a:hover {
 .about-section {
     padding: 80px 20px;
     text-align: center;
-
+    height: 90vh;
 }
 
 .about-section h2 {
@@ -148,6 +148,7 @@ header nav ul li a:hover {
 /* project section */
 .project-section {
     padding: 100px 20px;
+    height: 90vh;
     text-align: center;
     background: #fff;
 
@@ -188,7 +189,7 @@ header nav ul li a:hover {
 }
 
 .project-card a {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
@@ -196,4 +197,142 @@ header nav ul li a:hover {
 
 .project-card a:hover {
     text-decoration: underline;
+}
+
+
+/* Skills Section */
+.skill-card {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+    max-width: 900px;
+    height: 90vh;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.skills h2::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: #007bff;
+    /* accent color */
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+    border-radius: 2px;
+}
+
+.skills-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-contain ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-contain li {
+    font-size: 18px;
+    background: #f9f9f9;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+.skills-contain li:hover {
+    transform: scale(1.05);
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    height: 90vh;
+    background: #f9f9f9;
+    /* soft background */
+    text-align: center;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    /* center block */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+#contact h2::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: #007bff;
+    /* accent color */
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+    border-radius: 2px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#contact p:hover {
+    transform: scale(1.05);
+    color: #007bff;
+    /* accent on hover */
+    cursor: pointer;
+}
+
+/* Make links look clickable */
+#contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    /* dark background */
+    color: #fff;
+    /* white text */
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    font-size: 16px;
+    border-top: 3px solid #007bff;
+    /* accent line */
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
 }
